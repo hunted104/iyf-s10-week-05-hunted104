@@ -1,55 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>DOM Practice</title>
-    <style>
-      .container {
-        padding: 20px;
-        border: 1px solid #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <header id="main-header">
-      <h1>DOM Practice</h1>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice - Week 5</title>
 
-    <main class="container">
-      <article data-id="123" data-category="tech">
-        <h2 class="title">Article Title</h2>
-        <p class="content">This is the first paragraph.</p>
-        <p class="content">This is the second paragraph.</p>
-      </article>
+  <style>
+    .container {
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
 
-      <section>
-        <h2>Form Section</h2>
-        <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name" />
-          <input type="email" id="email" name="email" placeholder="Email" />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+    .highlight {
+      background-color: yellow;
+    }
+
+    button {
+      margin: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <h1>DOM Practice Week 5</h1>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- ARTICLE (DOM selection + dataset tasks) -->
+    <article data-id="123" data-category="tech">
+      <h2 class="title">Article Title</h2>
+
+      <p class="content">This is the first paragraph.</p>
+      <p class="content">This is the second paragraph.</p>
+      <p class="content">This is the third paragraph.</p>
+    </article>
+
+    <!-- FORM
+    <section>
+      <h2>Form Section</h2>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- COUNTER (EVENTS TASK) -->
+    <section>
+      <h2>Counter App</h2>
 
       <div id="counter-container">
-        <h2 id="count-display">0</h2>
+        <h3 id="count-display">0</h3>
+
         <button id="increase-btn">+</button>
         <button id="decrease-btn">-</button>
         <button id="reset-btn">Reset</button>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <p>&copy; 2026</p>
-    </footer>
+    <!-- TO-DO LIST 
+    <section>
+      <h2>To-Do List</h2>
 
-    <script src="dom.js"></script>
-  </body>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Enter task" required />
+        <button type="submit">Add</button>
+      </form>
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <button class="filter" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+
+      <!-- TASK LIST -->
+      <ul id="todo-list"></ul>
+
+      <!-- STATS -->
+      <p id="items-left">0 items left</p>
+      <button id="clear-completed">Clear Completed</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 DOM Practice Project</p>
+  </footer>
+
+  <script src="dom.js"></script>
+
+</body>
 </html>
