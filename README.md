@@ -13,9 +13,9 @@ The project entails the creation of a weather dashboard for better weather study
 - JavaScript
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+Select elements using `getElementById`, `querySelector`, and `querySelectorAll`
+- Traverse the DOM (parent, children, siblings)
+- Modify text content and HTML dynamically
 
 ## How to Run
 1. Clone this repository
@@ -24,10 +24,11 @@ The project entails the creation of a weather dashboard for better weather study
    Run `npm install` then `npm start`
 
 ## Lessons Learned
-I learned to apply various javascript codes for a complete project activity
+How the DOM works and how to manipulate it
+Using localStorage to persist data
 ## Challenges Faced
-I underwent the challange of applying various codes and their different functionalities but faced it by seeking assistance from my peers
-The process also had some of the discouragments due to some code failures which i was help in correcting them both by my peers and also the artificial intelligence.
+Understanding how event delegation works
+Debugging issues with dynamic elements which was solved by assisatnce from friends in the debuging
 ## Screenshots (optional)
 
 
